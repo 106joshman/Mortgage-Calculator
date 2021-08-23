@@ -42,11 +42,24 @@ function loanAmount() {
         document.getElementById('principal').innerHTML = (loan / third).toFixed(2);
 
         // monthly payment value
-        document.getElementById('show').innerHTML = '₦ ' + ((loan * int) + (loan / first)).toFixed(2);
+        document.getElementById('show').innerHTML = '₦ ' + ((loan * int) + (loan / third)).toFixed(2);
     }
     else {
         // alert to notify client of unselected duration/tenure
         alert("select a duration")
+    }
+}
+
+
+
+function checkButton() {
+    var getSelectedValue = document.querySelector('input[name="month"]:checked');
+
+    if (getSelectedValue != null) {
+        document.getElementById('show').innerHTML = '₦ ' + ((loan * int) + (loan / first)).toFixed(2);
+    }
+    else {
+        alert("select a duration");
     }
 }
 
