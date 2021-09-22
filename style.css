@@ -8,6 +8,7 @@
     margin: 80px auto;
     width: 350px;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #0a65b9;
 }
 
@@ -15,7 +16,6 @@
     background-color: #86156d;
     color: white;
     padding: 8px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -29,9 +29,8 @@ form{
 }
 
 label{
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
 }
 
 input[type=number]{
@@ -39,8 +38,7 @@ input[type=number]{
     padding: 10px;
     color: white;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 90%;
+    width: 95%;
     border-radius: 10px;
     outline: none;
     border: none;
@@ -57,10 +55,9 @@ input::placeholder{
     padding: 10px;
     height: 38px;
     color: white;
-    width: 90%;
+    width: 95%;
     font-size: 14px;
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 input::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
@@ -68,7 +65,7 @@ input::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
     margin: 0;
 }
 
-input[type=radio]{
+input[type=radio], input[type=checkbox]{
     margin: 0 8px;
 }
 
@@ -80,6 +77,11 @@ input[type=radio]{
     padding: 8px;
     font-size: 18px;
     border-radius: 10px;
+    margin-left: auto;
+}
+
+.pay-int{
+    margin-top: 10px;
 }
 
 .text-show, .note{

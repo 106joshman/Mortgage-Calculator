@@ -15,21 +15,32 @@
         <h2>Mortgage Calculator</h2>
         
         <form action="" id="mortCalc" method="post">
+            <div class="tenure" id="tenure">
+                <div class="label">
+                    <label for="tenure">Loan Tenure</label>
+                </div>
+                    <input type="radio" id="six" name="month" autocomplete="off" value="6">6 Month
+                    <input type="radio" id="nine" name="month" autocomplete="off" value="9">9 Month
+                    <input type="radio" id="twelve" name="month" autocomplete="off" value="12">12 Month
+            </div>
+            <div class="interest">
+                <div class="label">
+                    <label for="interest">Interest Rate %</label>
+                </div>
+                <input type="number" name="interest" oninput="interest(this.value)" onchange="interest(this.value)"  id="interest" placeholder="3.25% for personal loan" required>
+            </div>
             <div class="amount" >
                 <div class="label">
                     <label for="amount">Loan Amount ₦</label>
                 </div>
                 <input type="number" name="amount" oninput="loanAmount(this.value)" onchange="loanAmount(this.value)"  id="lAmount" placeholder="Enter loan amount" required>
             </div>
-
-            <div class="interest">
+            <div class="pay-int">
                 <div class="label">
-                    <label for="interest">Interest Rate %</label>
+                    <label for="paid interest">Payable Interest</label>
                 </div>
                 <p class="rate" id="rate"></p>
-                <!-- <input id="rate" type="number" name="rate" placeholder="" class="inputField rate-input" tabindex="2"> -->
             </div>
-
             <div class="principal">
                 <div class="label">
                     <label for="principal">Principal</label>
@@ -37,23 +48,13 @@
                 <p class="princip" id="principal"></p>
                 <!-- <input id="principal" type="number" name="principal" value="" placeholder=""> -->
             </div>
-
-            <div class="tenure" id="tenure">
-                <div class="label">
-                    <label for="tenure">Loan Tenure</label>
-                </div>
-                    <input type="radio" id="six" name="month" autocomplete="off" value="6">6
-                    <input type="radio" id="nine" name="month" autocomplete="off" value="9">9
-                    <input type="radio" id="twelve" name="month" autocomplete="off" value="12">12
+            <div class="text-show">
+                <p id="show" class="show">Monthly Payment?</p>
             </div>
         </form>
-
-        <div class="text-show">
-            <p id="show" class="show">Monthly Payment?</p>
-        </div>
-
+        
         <div class="note">
-            <p>Please note that interest percantage will be charged at 4.25%.</p>
+            <p>Please note that monthly interest percantage will be charged at <br> 4.25% for Business loan and <br> 3.25% for Personal loan.</p>
         </div>
     </div>
     
