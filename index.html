@@ -27,7 +27,7 @@
                 <div class="label">
                     <label for="interest">Interest Rate %</label>
                 </div>
-                <input type="number" name="interest" oninput="interest(this.value)" onchange="interest(this.value)"  id="interest" placeholder="3.25% for personal loan" required>
+                <input type="number" name="interest" oninput="interest(this.value)" onchange="interest(this.value)"  id="interest" placeholder="Enter interest rate" required>
             </div>
             <div class="amount" >
                 <div class="label">
@@ -39,13 +39,13 @@
                 <div class="label">
                     <label for="paid interest">Payable Interest</label>
                 </div>
-                <p class="rate" id="rate"></p>
+                <p style="color: black;" class="rate" id="rate">0.00</p>
             </div>
             <div class="principal">
                 <div class="label">
                     <label for="principal">Principal</label>
                 </div>
-                <p style="color: black;" class="princip" id="principal">Principal</p>
+                <p style="color: black;" class="princip" id="principal">0.00</p>
             </div>
             <div class="text-show">
                 <p id="show" class="show">Monthly Payment?</p>
