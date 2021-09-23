@@ -24,6 +24,12 @@
                     <input type="radio" id="nine" name="month" autocomplete="off" value="9">9
                     <input type="radio" id="twelve" name="month" autocomplete="off" value="12">12
             </div>
+            <div class="interest">
+                <div class="label">
+                    <label for="interest">Interest Rate %</label>
+                </div>
+                <input type="number" name="interest" oninput="interest(this.value)" onchange="interest(this.value)"  id="interest" placeholder="3.25% for personal loan" required>
+            </div>
             <div class="amount" >
                 <div class="label">
                     <label for="amount">Loan Amount ₦</label>
