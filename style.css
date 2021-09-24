@@ -36,7 +36,7 @@ label{
 input[type=number]{
     background-color: gray;
     padding: 10px;
-    color: black;
+    color: white;
     font-size: 14px;
     width: 95%;
     border-radius: 10px;
@@ -46,7 +46,7 @@ input[type=number]{
 }
 
 input::placeholder{
-    color: black;
+    color: white;
     font-style: 14px;
 }
 
@@ -54,7 +54,7 @@ input::placeholder{
     background-color: gray;
     padding: 10px;
     height: 38px;
-    color: black;
+    color: white;
     width: 95%;
     font-size: 16px;
     border-radius: 10px;
